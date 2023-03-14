@@ -12,8 +12,7 @@ player.on(
     const seconds = currentTime.seconds;
     localStorage.setItem(KEY_STORAGE, JSON.stringify(seconds));
     console.log(localStorage);
-  }),
-  1000
+  }, 1000)
 );
 
 const timeOn = JSON.parse(localStorage.getItem(KEY_STORAGE));
